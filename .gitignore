@@ -1,0 +1,14 @@
+# Files
+
+*.class
+*.log
+*.checksum
+*.orig
+.settings/
+.project
+.classpath
+
+# Directories
+
+target/
+bin/
