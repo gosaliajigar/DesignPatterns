@@ -11,6 +11,6 @@ A. Creational Design Patterns
   5. Singleton (5 flavors)
 
 B. Structural Design Patterns
-
+  1. Adapter
 
 C. Behavioral Design Patterns
