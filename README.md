@@ -14,3 +14,5 @@ B. Structural Design Patterns
   2. Facade
 
 C. Behavioral Design Patterns
+  1. Chain of Responsibilities
+
