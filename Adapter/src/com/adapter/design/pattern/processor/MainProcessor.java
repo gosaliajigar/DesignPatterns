@@ -20,9 +20,8 @@ public class MainProcessor {
 		MainProcessor.doTasks(extra);
 		Clean c1 = new Office();
 		Clean c2 = new Workshop();
-		c1.makeClean();
-		c2.makeClean();
-		extra.makeClean();
+		MainProcessor.doTasks(c1);
+		MainProcessor.doTasks(c2);
 	}
 
 	// In order to reuse Workshop and Office classes,
@@ -33,6 +32,7 @@ public class MainProcessor {
 			((Clean) job).makeClean();
 		if (job instanceof Extra) {
 			((Extra) job).takeCare();
+			((Extra) job).makeClean();
 		}
 	}
 }
