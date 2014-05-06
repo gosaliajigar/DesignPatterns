@@ -28,11 +28,11 @@ public class MainProcessor {
 	// we create an adapter interface Extra and
 	// add new job takeCare in the system.
 	public static void doTasks(Clean job) {
-		if (job instanceof Clean)
-			((Clean) job).makeClean();
 		if (job instanceof Extra) {
 			((Extra) job).takeCare();
 			((Extra) job).makeClean();
+		} else if (job instanceof Clean) {
+			((Clean) job).makeClean();
 		}
 	}
 }
