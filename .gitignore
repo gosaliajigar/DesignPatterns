@@ -16,8 +16,6 @@ hs_err_pid*
 *.checksum
 *.orig
 .settings/
-.project
-.classpath
 
 # Directories
 
