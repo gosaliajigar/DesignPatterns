@@ -12,6 +12,8 @@ A. Creational Design Patterns
 B. Structural Design Patterns
   1. Adapter
   2. Facade
+  3. Composite
+  4. Decorator
 
 C. Behavioral Design Patterns
   1. Chain of Responsibilities

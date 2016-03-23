@@ -35,20 +35,34 @@ public class MainProcessor {
 					+ Arrays.asList("1:CSVFile", "2:XMLFile", "3:DBFile"));
 			System.out.println();
 			choice = scanner.nextLine();
+			scanner.close();
 		}
-
-		if (choice.equals("1"))
-			display = new CSVFile();
-		else if (choice.equals("2"))
-			display = new XMLFile();
-		else if (choice.equals("3"))
-			display = new DBFile();
-		else {
-			System.out.println("Invalid fileType (valid : 1-3)");
-			System.exit(1);
-		}
+		display = getDisplay(choice);
 		// converging code follows
 		display.load("");
 		display.formatConsistency();
+	}
+
+	/**
+	 * @param choice
+	 * @return
+	 */
+	private static Display getDisplay(String choice) {
+		Display display = null;
+		switch(choice) {
+		case "1":
+			display = new CSVFile();
+			break;
+		case "2":
+			display = new XMLFile();
+			break;
+		case "3":
+			display = new DBFile();
+			break;
+		default :
+			System.out.println("Invalid fileType (valid : 1-3)");
+			System.exit(1);			
+		}
+		return display;
 	}
 }
