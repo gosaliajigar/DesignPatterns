@@ -3,7 +3,12 @@ package com.composite.design.processor;
 import com.composite.design.part.Employee;
 
 /**
- * Composite Design Patter Main Processor to print tree hierarchy
+ * Composite Design Pattern : Structural Design Pattern<br>
+ * <br>
+ * Build a complex object out of elemental objects and itself like a tree
+ * structure. Represent a part-whole relationship like tree folder system. Group
+ * components to form larger components, which in turn can be grouped to form
+ * still larger components.
  * 
  * @author "Jigar Gosalia"
  *
@@ -18,9 +23,9 @@ public class MainProcessor {
 		Employee cto = new Employee("Joey", "Cheif Technical Officer", 100000);
 
 		Employee seniorDirector = new Employee("Chandler", "Senior Director", 100000);
-		
+
 		Employee director = new Employee("Ross", "Director", 80000);
-		
+
 		Employee manager = new Employee("Racheal", "Manager", 50000);
 
 		Employee leadDeveloper = new Employee("Phoebe", "Lead Developer", 30000);
@@ -45,6 +50,10 @@ public class MainProcessor {
 		getEmployeeTree(cto, "");
 	}
 
+	/**
+	 * @param head
+	 * @param tabs
+	 */
 	private static void getEmployeeTree(Employee head, String tabs) {
 		tabs += "-";
 		for (Employee employee : head.getSubordinates()) {

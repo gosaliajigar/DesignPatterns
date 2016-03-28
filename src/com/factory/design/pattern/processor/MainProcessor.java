@@ -9,7 +9,11 @@ import com.factory.design.pattern.implementations.XMLFile;
 import com.factory.design.pattern.interfaces.Display;
 
 /**
- * Main Processor
+ * Factory Design Pattern : Creational Design Pattern<br>
+ * <br>
+ * Provides an abstraction or an interface and lets subclass or implementing
+ * classes decide which class or method should be instantiated or called, based
+ * on the conditions or parameters given.
  * 
  * @author "Jigar Gosalia"
  * 
@@ -44,10 +48,12 @@ public class MainProcessor {
 	}
 
 	/**
+	 * Factory Method 
+	 * 
 	 * @param choice
 	 * @return
 	 */
-	private static Display getDisplay(String choice) {
+	public static Display getDisplay(String choice) {
 		Display display = null;
 		switch(choice) {
 		case "1":

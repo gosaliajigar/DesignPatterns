@@ -7,6 +7,12 @@ import com.adapter.design.pattern.interfaces.Clean;
 import com.adapter.design.pattern.interfaces.Extra;
 
 /**
+ * Adapter Design Pattern : Structural Design Pattern<br>
+ * <br>
+ * Convert the existing interfaces to a new interface to achieve compatibility
+ * and re-usability of the unrelated classes in one application. Also known as
+ * Wrapper pattern.
+ * 
  * @author "Jigar Gosalia"
  * 
  */

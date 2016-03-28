@@ -3,7 +3,7 @@ package com.decorator.design.decorator;
 import com.decorator.design.existing.Number;
 
 /**
- * @author "Jigar Gosali"
+ * @author "Jigar Gosalia"
  *
  */
 public class Decorator {

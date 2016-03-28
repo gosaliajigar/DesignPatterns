@@ -3,7 +3,7 @@ package com.decorator.design.existing;
 import java.util.Random;
 
 /**
- * @author jgosalia
+ * @author "Jigar Gosalia"
  *
  */
 public class Number {

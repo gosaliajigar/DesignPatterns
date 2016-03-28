@@ -8,17 +8,25 @@ import com.abstractfactory.design.implementations.UbuntuGUIFactory;
 import com.abstractfactory.design.implementations.WindowsGUIFactory;
 
 /**
+ * Abstract Factory Design Pattern : Creational Design Pattern<br>
+ * <br>
+ * 
+ * Provides one level of interface higher than the factory pattern. It is used
+ * to return one of several factories.<br>
+ * <br>
+ * 
  * MainProcess reads the file at location "C:\OSType.txt" and depending on type
  * of character in OSType.txt file it instantiates the application with
- * appropriate OSGUIFactory.
- * 
+ * appropriate OSGUIFactory.<br>
+ * <br>
  * Application depicts AbstractFactory design pattern, where it acts as an
  * abstract factory that can create the button and call paint method to paint
- * the button.
- * 
+ * the button.<br>
+ * <br>
  * Prerequisites : Either pass OSType thru Run Configuration in Eclipse or
  * Create a OSType.txt file under C: Drive with one of the valid OSType values
- * [0:Windows;1:Linux;2:Ubuntu].
+ * [0:Windows;1:Linux;2:Ubuntu].<br>
+ * <br>
  * 
  * @author "Jigar Gosalia"
  * 
@@ -48,6 +56,13 @@ public class MainProcess {
 				System.out.println("Throwing " + exception.getClass().getName()
 						+ " while reading/opening file .... ");
 				System.out.println(exception.getMessage());
+			} finally {
+				// Set Default of fileNotFound
+				if (osType == null) {
+					System.out.println("As there was an exception, setting default to Windows OS!");
+					System.out.println();
+					osType = new char[]{'0'};
+				}
 			}
 		}
 

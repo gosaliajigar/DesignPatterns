@@ -8,13 +8,18 @@ import com.singleton.design.threadsafe.SingletonThreadSafe;
 import com.singleton.design.threadsafe.SingletonThreadSafeCleaner;
 
 /**
- * Main Processor
+ * Singleton Design Pattern : Creational Design Pattern<br>
+ * <br>
+ * One instance of a class or one value accessible globally in an application. 
  * 
  * @author "Jigar Gosalia"
  *
  */
 public class MainProcessor {
 
+	/**
+	 * @param arg
+	 */
 	public static void main(String[] arg) {
 
 		SingletonFlagPattern singletonFlagPattern1 = SingletonFlagPattern

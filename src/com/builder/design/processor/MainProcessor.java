@@ -7,7 +7,9 @@ import com.builder.design.director.Waiter;
 import com.builder.design.product.Pizza;
 
 /**
- * MainProcessor processing requests
+ * Builder Design Pattern : Creational Design Pattern<br>
+ * <br>
+ * Construct a complex object from simple objects step by step. 
  * 
  * @author "Jigar Gosalia"
  *
