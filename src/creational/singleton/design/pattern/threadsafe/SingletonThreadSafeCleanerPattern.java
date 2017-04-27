@@ -4,26 +4,26 @@ package creational.singleton.design.pattern.threadsafe;
  * @author "Jigar Gosalia"
  * 
  */
-public class SingletonThreadSafeCleaner {
+public class SingletonThreadSafeCleanerPattern {
 
 	/**
 	 * 
 	 */
-	private static volatile SingletonThreadSafeCleaner instance = null;
+	private static volatile SingletonThreadSafeCleanerPattern instance = null;
 
 	/**
 	 * 
 	 */
-	private SingletonThreadSafeCleaner() {
+	private SingletonThreadSafeCleanerPattern() {
 		System.out.println("Instantiated SingletonThreadSafeCleaner ... ");
 	}
 
 	/**
 	 * @return
 	 */
-	public static synchronized SingletonThreadSafeCleaner getInstance() {
+	public static synchronized SingletonThreadSafeCleanerPattern getInstance() {
 		if (instance == null) {
-			instance = new SingletonThreadSafeCleaner();
+			instance = new SingletonThreadSafeCleanerPattern();
 		} else {
 			System.out
 					.println("Returning Existing SingletonThreadSafeCleaner ... ");

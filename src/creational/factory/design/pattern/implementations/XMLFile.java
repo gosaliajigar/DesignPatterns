@@ -10,19 +10,15 @@ import creational.factory.design.pattern.interfaces.Display;
  */
 public class XMLFile implements Display {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.factory.design.pattern.Display#load(java.lang.String)
+	/* (non-Javadoc)
+	 * @see creational.factory.design.pattern.interfaces.Display#load(java.lang.String)
 	 */
 	public void load(String xmlfile) {
 		System.out.println("Load from an xml file");
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.factory.design.pattern.Display#formatConsistency()
+	/* (non-Javadoc)
+	 * @see creational.factory.design.pattern.interfaces.Display#formatConsistency()
 	 */
 	public void formatConsistency() {
 		System.out.println("XML file format changed");

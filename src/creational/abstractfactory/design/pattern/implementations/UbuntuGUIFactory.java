@@ -12,7 +12,7 @@ import creational.abstractfactory.design.pattern.interfaces.GUIFactory;
 public class UbuntuGUIFactory implements GUIFactory {
 
 	/* (non-Javadoc)
-	 * @see com.abstractfactory.design.interfaces.GUIFactory#createButton()
+	 * @see creational.abstractfactory.design.pattern.interfaces.GUIFactory#createButton()
 	 */
 	@Override
 	public Button createButton() {

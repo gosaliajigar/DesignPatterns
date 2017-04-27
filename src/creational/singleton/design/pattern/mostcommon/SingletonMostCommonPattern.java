@@ -4,24 +4,24 @@ package creational.singleton.design.pattern.mostcommon;
  * @author "Jigar Gosalia"
  *
  */
-public class SingletonMostCommon {
+public class SingletonMostCommonPattern {
 
 	/**
 	 * 
 	 */
-	private static SingletonMostCommon instance = new SingletonMostCommon();
+	private static SingletonMostCommonPattern instance = new SingletonMostCommonPattern();
 
 	/**
 	 * 
 	 */
-	private SingletonMostCommon() {
+	private SingletonMostCommonPattern() {
 		System.out.println("Instantiated SingletonMostCommon ... ");
 	}
 
 	/**
 	 * @return
 	 */
-	public static SingletonMostCommon getInstance() {
+	public static SingletonMostCommonPattern getInstance() {
 		return instance;
 	}
 }

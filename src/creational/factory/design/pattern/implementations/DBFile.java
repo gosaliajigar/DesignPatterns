@@ -10,19 +10,15 @@ import creational.factory.design.pattern.interfaces.Display;
  */
 public class DBFile implements Display {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.factory.design.pattern.Display#load(java.lang.String)
+	/* (non-Javadoc)
+	 * @see creational.factory.design.pattern.interfaces.Display#load(java.lang.String)
 	 */
 	public void load(String dbfile) {
 		System.out.println("Load from a db file");
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.factory.design.pattern.Display#formatConsistency()
+	/* (non-Javadoc)
+	 * @see creational.factory.design.pattern.interfaces.Display#formatConsistency()
 	 */
 	public void formatConsistency() {
 		System.out.println("DB file format changed");

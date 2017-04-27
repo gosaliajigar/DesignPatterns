@@ -21,9 +21,10 @@ public class President extends PurchasePower {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.chainofresponsibilities.design.pattern.handlers.PurchasePower#
-	 * processRequest
-	 * (com.chainofresponsibilities.design.pattern.pojo.PurchaseRequest)
+	 * @see
+	 * behavioral.chainofresponsibilities.design.pattern.handlers.PurchasePower
+	 * #processRequest
+	 * (behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest)
 	 */
 	public void processRequest(PurchaseRequest request) {
 		if (request.getAmount() < ALLOWABLE)

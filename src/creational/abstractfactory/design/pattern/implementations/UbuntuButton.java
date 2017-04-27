@@ -12,7 +12,7 @@ import creational.abstractfactory.design.pattern.interfaces.Button;
 public class UbuntuButton implements Button {
 
 	/* (non-Javadoc)
-	 * @see com.abstractfactory.design.interfaces.Button#paint()
+	 * @see creational.abstractfactory.design.pattern.interfaces.Button#paint()
 	 */
 	@Override
 	public void paint() {

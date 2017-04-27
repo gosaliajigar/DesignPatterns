@@ -8,7 +8,7 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
 
 
 /**
- * Chain of Responsibilities : Behaviorial Design Pattern<br>
+ * Chain of Responsibilities : Behavioral Design Pattern<br>
  * <br>
  * Chain of Responsibilities let more than one object handle a request without
  * their knowing each other. Pass the request to chained objects until it has

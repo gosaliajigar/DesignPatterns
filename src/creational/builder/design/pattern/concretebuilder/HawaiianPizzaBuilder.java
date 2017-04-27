@@ -11,7 +11,7 @@ import creational.builder.design.pattern.abstractbuilder.PizzaBuilder;
 public class HawaiianPizzaBuilder extends PizzaBuilder {
 
 	/* (non-Javadoc)
-	 * @see com.builder.design.abstractbuilder.PizzaBuilder#buildDough()
+	 * @see creational.builder.design.pattern.abstractbuilder.PizzaBuilder#buildDough()
 	 */
 	@Override
 	public void buildDough() {
@@ -19,7 +19,7 @@ public class HawaiianPizzaBuilder extends PizzaBuilder {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.builder.design.abstractbuilder.PizzaBuilder#buildSauce()
+	 * @see creational.builder.design.pattern.abstractbuilder.PizzaBuilder#buildSauce()
 	 */
 	@Override
 	public void buildSauce() {
@@ -27,7 +27,7 @@ public class HawaiianPizzaBuilder extends PizzaBuilder {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.builder.design.abstractbuilder.PizzaBuilder#buildToppings()
+	 * @see creational.builder.design.pattern.abstractbuilder.PizzaBuilder#buildToppings()
 	 */
 	@Override
 	public void buildToppings() {
