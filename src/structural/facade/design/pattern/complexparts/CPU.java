@@ -1,8 +1,7 @@
 package structural.facade.design.pattern.complexparts;
 
-/** Complex Objects */
 /**
- * Complex Objects
+ * Complex Parts
  * 
  * @author "Jigar Gosalia"
  *
