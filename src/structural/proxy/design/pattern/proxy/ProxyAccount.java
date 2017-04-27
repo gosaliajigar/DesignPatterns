@@ -30,6 +30,7 @@ public class ProxyAccount implements Activity {
 		System.out.println("Account Number: " + account.getAccountNumber());
 		System.out.println("History: ");
 		for (String record: history) {
+			// display only 1st 10 transactions
 			if (count <= 10) {
 				System.out.println(count++ + ". " + record);
 			} else {
