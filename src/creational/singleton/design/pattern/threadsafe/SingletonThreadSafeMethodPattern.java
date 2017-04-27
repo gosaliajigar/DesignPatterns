@@ -9,7 +9,7 @@ public class SingletonThreadSafeMethodPattern {
 	/**
 	 * 
 	 */
-	private static volatile SingletonThreadSafeMethodPattern instance = null;
+	private static volatile SingletonThreadSafeMethodPattern instance;
 
 	/**
 	 * 

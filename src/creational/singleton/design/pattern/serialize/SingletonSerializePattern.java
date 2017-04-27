@@ -40,6 +40,8 @@ public class SingletonSerializePattern implements Serializable {
 	 * readResolve ensures that object read from file during de-serialization
 	 * returns the same instance and not a new instance of singleton object.
 	 * 
+	 * readResolve is called after readObject returns.
+	 * 
 	 * @return
 	 */
 	protected Object readResolve() {

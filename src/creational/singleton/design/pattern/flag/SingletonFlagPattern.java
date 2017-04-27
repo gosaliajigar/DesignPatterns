@@ -14,7 +14,7 @@ public class SingletonFlagPattern {
 	/**
 	 * 
 	 */
-	private static SingletonFlagPattern instance = null;
+	private static SingletonFlagPattern instance;
 
 	/**
 	 * 
