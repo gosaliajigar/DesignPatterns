@@ -1,10 +1,10 @@
 package structural.adapter.design.pattern.processor;
 
-import structural.adapter.design.pattern.implemetations.Facility;
-import structural.adapter.design.pattern.implemetations.Office;
-import structural.adapter.design.pattern.implemetations.Workshop;
-import structural.adapter.design.pattern.interfaces.Clean;
-import structural.adapter.design.pattern.interfaces.Extra;
+import structural.adapter.design.pattern.implemetations.Car;
+import structural.adapter.design.pattern.implemetations.Cycle;
+import structural.adapter.design.pattern.implemetations.Bike;
+import structural.adapter.design.pattern.interfaces.Gear;
+import structural.adapter.design.pattern.interfaces.AdvancedGear;
 
 
 /**
@@ -23,23 +23,23 @@ public class MainProcessor {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Extra extra = new Facility();
-		MainProcessor.doTasks(extra);
-		Clean c1 = new Office();
-		Clean c2 = new Workshop();
-		MainProcessor.doTasks(c1);
-		MainProcessor.doTasks(c2);
+		AdvancedGear car = new Car();
+		MainProcessor.doTasks(car);
+		Gear cycle = new Cycle();
+		Gear bike = new Bike();
+		MainProcessor.doTasks(cycle);
+		MainProcessor.doTasks(bike);
 	}
 
-	// In order to reuse Workshop and Office classes,
-	// we create an adapter interface Extra and
-	// add new job takeCare in the system.
-	public static void doTasks(Clean job) {
-		if (job instanceof Extra) {
-			((Extra) job).takeCare();
-			((Extra) job).makeClean();
-		} else if (job instanceof Clean) {
-			((Clean) job).makeClean();
+	// In order to reuse Cycle and Bike classes,
+	// we create an adapter interface AdvancedGear and
+	// add new job automaticGear in the system.
+	public static void doTasks(Gear job) {
+		if (job instanceof AdvancedGear) {
+			((AdvancedGear) job).manualGear();
+			((AdvancedGear) job).automaticGear();
+		} else if (job instanceof Gear) {
+			((Gear) job).manualGear();
 		}
 	}
 }
