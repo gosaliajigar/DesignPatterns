@@ -1,12 +1,12 @@
 package creational.singleton.design.pattern.processor;
 
 
-import creational.singleton.design.pattern.best.SingletonBestPattern;
+import creational.singleton.design.pattern.billpugh.SingletonBillPughPattern;
+import creational.singleton.design.pattern.early.SingletonEarlyPattern;
 import creational.singleton.design.pattern.flag.SingletonFlagPattern;
 import creational.singleton.design.pattern.lazy.SingletonLazyPattern;
-import creational.singleton.design.pattern.mostcommon.SingletonMostCommonPattern;
-import creational.singleton.design.pattern.threadsafe.SingletonThreadSafePattern;
-import creational.singleton.design.pattern.threadsafe.SingletonThreadSafeCleanerPattern;
+import creational.singleton.design.pattern.threadsafe.SingletonThreadSafeDoubleCheckedLockingPattern;
+import creational.singleton.design.pattern.threadsafe.SingletonThreadSafeMethodPattern;
 
 /**
  * Singleton Design Pattern : Creational Design Pattern<br>
@@ -47,42 +47,42 @@ public class MainProcessor {
 		System.out.println("SingletonLazyPattern Instance 2 : " + ((singletonLazyPattern2!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonMostCommonPattern singletonMostCommon1 = SingletonMostCommonPattern.getInstance();
+		SingletonEarlyPattern singletonMostCommon1 = SingletonEarlyPattern.getInstance();
 
 		System.out.println("SingletonMostCommon  Instance 1 : " + ((singletonMostCommon1!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonMostCommonPattern singletonMostCommon2 = SingletonMostCommonPattern.getInstance();
+		SingletonEarlyPattern singletonMostCommon2 = SingletonEarlyPattern.getInstance();
 
 		System.out.println("SingletonMostCommon  Instance 2 : " + ((singletonMostCommon2!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonThreadSafePattern singletonThreadSafe1 = SingletonThreadSafePattern.getInstance();
+		SingletonThreadSafeDoubleCheckedLockingPattern singletonThreadSafe1 = SingletonThreadSafeDoubleCheckedLockingPattern.getInstance();
 
 		System.out.println("SingletonThreadSafe  Instance 1 : " + ((singletonThreadSafe1!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonThreadSafePattern singletonThreadSafe2 = SingletonThreadSafePattern.getInstance();
+		SingletonThreadSafeDoubleCheckedLockingPattern singletonThreadSafe2 = SingletonThreadSafeDoubleCheckedLockingPattern.getInstance();
 
 		System.out.println("SingletonThreadSafe  Instance 2 : " + ((singletonThreadSafe2!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonThreadSafeCleanerPattern singletonThreadSafeCleaner1 = SingletonThreadSafeCleanerPattern.getInstance();
+		SingletonThreadSafeMethodPattern singletonThreadSafeCleaner1 = SingletonThreadSafeMethodPattern.getInstance();
 
 		System.out.println("SingletonThreadSafeCleaner  Instance 1 : " + ((singletonThreadSafeCleaner1!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonThreadSafeCleanerPattern singletonThreadSafeCleaner2 = SingletonThreadSafeCleanerPattern.getInstance();
+		SingletonThreadSafeMethodPattern singletonThreadSafeCleaner2 = SingletonThreadSafeMethodPattern.getInstance();
 
 		System.out.println("SingletonThreadSafeCleaner  Instance 2 : " + ((singletonThreadSafeCleaner2!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonBestPattern singletonBestPattern1 = SingletonBestPattern.getInstance();
+		SingletonBillPughPattern singletonBestPattern1 = SingletonBillPughPattern.getInstance();
 
 		System.out.println("SingletonBestPattern  Instance 1 : " + ((singletonBestPattern1!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();
 
-		SingletonBestPattern singletonBestPattern2 = SingletonBestPattern.getInstance();
+		SingletonBillPughPattern singletonBestPattern2 = SingletonBillPughPattern.getInstance();
 
 		System.out.println("SingletonBestPattern  Instance 2 : " + ((singletonBestPattern2!=null)? "SUCCESS" : "FAILURE"));
 		System.out.println();

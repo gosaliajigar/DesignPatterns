@@ -12,7 +12,7 @@ B. Creational Design Patterns : Provides solution to instantiate a object in the
   1. Abstract Factory
   2. Builder
   3. Factory
-  4. Singleton (5 flavors)
+  4. Singleton (9 flavors)
 
 C. Structural Design Patterns : Provides different ways to create a class structure, for example using inheritance and composition to create a large object from small objects.
   1. Adapter
