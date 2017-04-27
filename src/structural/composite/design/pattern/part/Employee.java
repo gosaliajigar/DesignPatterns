@@ -38,6 +38,9 @@ public class Employee {
 		return subordinates;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	public String toString() {
 		return ("Employee :[ Name : " + name + ", dept : " + department + ", salary :" + salary + " ]");
 	}

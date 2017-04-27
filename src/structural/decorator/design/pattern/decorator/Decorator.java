@@ -1,6 +1,6 @@
 package structural.decorator.design.pattern.decorator;
 
-import structural.decorator.design.pattern.existing.Number;
+import structural.decorator.design.pattern.existing.TokenNumber;
 
 /**
  * @author "Jigar Gosalia"
@@ -8,13 +8,16 @@ import structural.decorator.design.pattern.existing.Number;
  */
 public class Decorator {
 
+	private TokenNumber token;
+
 	/**
 	 * 
 	 */
-	public Decorator() {
+	public Decorator(final TokenNumber token) {
+		this.token = token;
 		// add a description to the number
-		System.out.print("Random number: ");
+		System.out.print("Token number: ");
 		// printed
-		new Number().print();
+		this.token.print();
 	}
 }
