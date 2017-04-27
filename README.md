@@ -3,18 +3,23 @@ DesignPatterns
 
 Sample Code for Design Patterns
 
-A. Creational Design Patterns
+A. Creational Design Patterns : Provides solution to instantiate a object in the best possible way for specific situations.
   1. Abstract Factory
-  2. Factory
-  3. Builder
+  2. Builder
+  3. Factory
   4. Singleton (5 flavors)
 
-B. Structural Design Patterns
+B. Structural Design Patterns : Provides different ways to create a class structure, for example using inheritance and composition to create a large object from small objects.
   1. Adapter
-  2. Facade
-  3. Composite
-  4. Decorator
+  2. Composite
+  3. Decorator
+  4. Facade
+  5. Proxy
 
-C. Behavioral Design Patterns
+C. Behavioral Design Patterns : Provides solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
   1. Chain of Responsibilities
+  2. Observer
+  3. Visitor
 
+Appendix
+  1. Object Builder Design Pattern (Too Many Parameters)
