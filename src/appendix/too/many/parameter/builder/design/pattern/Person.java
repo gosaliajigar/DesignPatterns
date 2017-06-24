@@ -39,72 +39,36 @@ public class Person {
 		return salutation;
 	}
 
-	public void setSalutation(String salutation) {
-		this.salutation = salutation;
-	}
-
 	public String getFirst() {
 		return first;
-	}
-
-	public void setFirst(String first) {
-		this.first = first;
 	}
 
 	public String getMiddle() {
 		return middle;
 	}
 
-	public void setMiddle(String middle) {
-		this.middle = middle;
-	}
-
 	public String getLast() {
 		return last;
-	}
-
-	public void setLast(String last) {
-		this.last = last;
 	}
 
 	public String getStreetName() {
 		return streetName;
 	}
 
-	public void setStreetName(String streetName) {
-		this.streetName = streetName;
-	}
-
 	public String getCity() {
 		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
 	}
 
 	public String getState() {
 		return state;
 	}
 
-	public void setState(String state) {
-		this.state = state;
-	}
-
 	public String getZipCode() {
 		return zipCode;
 	}
 
-	public void setZipCode(String zipCode) {
-		this.zipCode = zipCode;
-	}
-
 	public boolean isMale() {
 		return isMale;
-	}
-
-	public void setMale(boolean isMale) {
-		this.isMale = isMale;
 	}
 
 	public static class PersonBuilder {
@@ -119,20 +83,6 @@ public class Person {
 		private boolean iIsMale;
 
 		public PersonBuilder() {}
-
-		public PersonBuilder(String iSalutation, String iFirst, String iMiddle, String iLast, String iStreetName,
-				String iCity, String iState, String iZipCode, boolean iIsMale) {
-			super();
-			this.iSalutation = iSalutation;
-			this.iFirst = iFirst;
-			this.iMiddle = iMiddle;
-			this.iLast = iLast;
-			this.iStreetName = iStreetName;
-			this.iCity = iCity;
-			this.iState = iState;
-			this.iZipCode = iZipCode;
-			this.iIsMale = iIsMale;
-		}
 
 		public PersonBuilder salutation(String salutation) {
 			this.iSalutation = salutation;
