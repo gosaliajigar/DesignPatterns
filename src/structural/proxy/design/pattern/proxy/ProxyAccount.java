@@ -9,7 +9,7 @@ import structural.proxy.design.pattern.interfaces.Activity;
  * ProxyAccount to be shared with client so that client have limited access to
  * Account features.
  * 
- * @author jgosalia
+ * @author "Jigar Gosalia"
  * 
  */
 public class ProxyAccount implements Activity {

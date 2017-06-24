@@ -25,7 +25,7 @@ public class MainProcessor {
 				"UPDATED 06", "UPDATED 07", "UPDATED 08", "UPDATED 09",
 				"UPDATED 10", "UPDATED 11", "UPDATED 12", "UPDATED 13",
 				"UPDATED 14", "UPDATED 15", "UPDATED 16", "UPDATED 17",
-				"DELETED"));
+				"DELETED 18"));
 
 		ProxyAccount proxy = new ProxyAccount(account);
 
