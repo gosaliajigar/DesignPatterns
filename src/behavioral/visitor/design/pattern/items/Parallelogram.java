@@ -1,13 +1,13 @@
 package behavioral.visitor.design.pattern.items;
 
-import behavioral.visitor.design.pattern.interfaces.Measurable;
-import behavioral.visitor.design.pattern.interfaces.Shape;
+import behavioral.visitor.design.pattern.interfaces.Visitor;
+import behavioral.visitor.design.pattern.interfaces.Visitable;
 
 /**
  * @author "Jigar Gosalia"
  *
  */
-public class Parallelogram implements Shape {
+public class Parallelogram implements Visitable {
 
 	private int side1;
 
@@ -27,7 +27,7 @@ public class Parallelogram implements Shape {
 	}
 
 	@Override
-	public void accept(Measurable measurable) {
-		measurable.visit(this);
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
 	}
 }

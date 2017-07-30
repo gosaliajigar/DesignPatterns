@@ -13,7 +13,7 @@ import behavioral.visitor.design.pattern.items.Triangle;
  * @author "Jigar Gosalia"
  *
  */
-public interface Measurable {
+public interface Visitor {
 
 	public void visit(Square square);
 

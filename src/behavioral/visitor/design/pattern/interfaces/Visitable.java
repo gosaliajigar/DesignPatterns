@@ -9,8 +9,8 @@ package behavioral.visitor.design.pattern.interfaces;
  * @author "Jigar Gosalia"
  *
  */
-public interface Shape {
+public interface Visitable {
 
-	public void accept(Measurable measurable);
+	public void accept(Visitor visitor);
 
 }

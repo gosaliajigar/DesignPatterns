@@ -1,14 +1,14 @@
 package behavioral.visitor.design.pattern.processor;
 
-import behavioral.visitor.design.pattern.interfaces.Measurable;
-import behavioral.visitor.design.pattern.interfaces.Shape;
+import behavioral.visitor.design.pattern.interfaces.Visitor;
+import behavioral.visitor.design.pattern.interfaces.Visitable;
 import behavioral.visitor.design.pattern.items.Circle;
 import behavioral.visitor.design.pattern.items.Parallelogram;
 import behavioral.visitor.design.pattern.items.Rectangle;
 import behavioral.visitor.design.pattern.items.Square;
 import behavioral.visitor.design.pattern.items.Trapezoid;
 import behavioral.visitor.design.pattern.items.Triangle;
-import behavioral.visitor.design.pattern.visitor.Perimeter;
+import behavioral.visitor.design.pattern.visitor.PerimeterVisitor;
 
 /**
  * Visitor Design Pattern: Behavioral Design Pattern<br>
@@ -29,9 +29,9 @@ public class MainProcessor {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Measurable measurable = new Perimeter();
+		Visitor visitor = new PerimeterVisitor();
 
-		Shape[] shapes = new Shape[]{
+		Visitable[] shapes = new Visitable[]{
 				new Square(10),
 				new Triangle(10, 20, 30),
 				new Rectangle(10, 10),
@@ -39,8 +39,8 @@ public class MainProcessor {
 				new Trapezoid(10, 20, 30),
 				new Circle(7)};
 
-		for (Shape shape: shapes) {
-			shape.accept(measurable);
+		for (Visitable shape: shapes) {
+			shape.accept(visitor);
 		}
 	}
 }

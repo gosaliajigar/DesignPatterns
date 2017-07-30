@@ -1,6 +1,6 @@
 package behavioral.visitor.design.pattern.visitor;
 
-import behavioral.visitor.design.pattern.interfaces.Measurable;
+import behavioral.visitor.design.pattern.interfaces.Visitor;
 import behavioral.visitor.design.pattern.items.Circle;
 import behavioral.visitor.design.pattern.items.Parallelogram;
 import behavioral.visitor.design.pattern.items.Rectangle;
@@ -12,7 +12,7 @@ import behavioral.visitor.design.pattern.items.Triangle;
  * @author "Jigar Gosalia"
  *
  */
-public class Perimeter implements Measurable {
+public class PerimeterVisitor implements Visitor {
 
 	/* (non-Javadoc)
 	 * @see behavioral.visitor.design.pattern.interfaces.Measurable#visit(behavioral.visitor.design.pattern.items.Square)
