@@ -31,7 +31,7 @@ public class MainProcessor {
 	public static void main(String[] args) {
 		Visitor visitor = new PerimeterVisitor();
 
-		Visitable[] shapes = new Visitable[]{
+		Visitable[] visitables = new Visitable[]{
 				new Square(10),
 				new Triangle(10, 20, 30),
 				new Rectangle(10, 10),
@@ -39,8 +39,8 @@ public class MainProcessor {
 				new Trapezoid(10, 20, 30),
 				new Circle(7)};
 
-		for (Visitable shape: shapes) {
-			shape.accept(visitor);
+		for (Visitable visitable: visitables) {
+			visitable.accept(visitor);
 		}
 	}
 }
