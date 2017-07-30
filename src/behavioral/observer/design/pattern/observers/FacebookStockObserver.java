@@ -1,5 +1,6 @@
-package behavioral.observer.design.pattern.observer;
+package behavioral.observer.design.pattern.observers;
 
+import behavioral.observer.design.pattern.observer.Observer;
 import behavioral.observer.design.pattern.subject.Stock;
 
 /**
@@ -8,7 +9,7 @@ import behavioral.observer.design.pattern.subject.Stock;
  * @author "Jigar Gosalia"
  *
  */
-public class LinkedInStockObserver implements Observer {
+public class FacebookStockObserver implements Observer {
 
 	private Stock stock;
 
@@ -22,7 +23,7 @@ public class LinkedInStockObserver implements Observer {
 		return count;
 	}
 
-	public LinkedInStockObserver (Stock stock) {
+	public FacebookStockObserver (Stock stock) {
 		this.setSubject(stock);
 	}
 
@@ -31,12 +32,8 @@ public class LinkedInStockObserver implements Observer {
 	 */
 	@Override
 	public void update(float delta) {
-		String change = "decreased";
 		count++;
-		if (delta > 0) {
-			change = "increased";
-		}
-		System.out.printf("%-6s %s %.2f\n", stock.getSymbol(), change, delta);
+		System.out.printf("%-6s %s %.2f\n", stock.getSymbol(), ((delta > 0) ? "increased" : "decreased"), delta);
 	}
 
 	/* (non-Javadoc)
@@ -56,5 +53,4 @@ public class LinkedInStockObserver implements Observer {
 		return "Observer [stock=" + stock + ", price Changed=" + count
 				+ " times]";
 	}
-
 }

@@ -9,7 +9,7 @@ public class SingletonLazyPattern {
 	/**
 	 * 
 	 */
-	private static SingletonLazyPattern instance = null;
+	private static SingletonLazyPattern instance;
 
 	/**
 	 * 

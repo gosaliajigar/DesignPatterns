@@ -1,5 +1,6 @@
-package behavioral.observer.design.pattern.observer;
+package behavioral.observer.design.pattern.observers;
 
+import behavioral.observer.design.pattern.observer.Observer;
 import behavioral.observer.design.pattern.subject.Stock;
 
 /**
@@ -8,7 +9,7 @@ import behavioral.observer.design.pattern.subject.Stock;
  * @author "Jigar Gosalia"
  *
  */
-public class FacebookStockObserver implements Observer {
+public class LinkedInStockObserver implements Observer {
 
 	private Stock stock;
 
@@ -22,7 +23,7 @@ public class FacebookStockObserver implements Observer {
 		return count;
 	}
 
-	public FacebookStockObserver (Stock stock) {
+	public LinkedInStockObserver (Stock stock) {
 		this.setSubject(stock);
 	}
 
@@ -56,4 +57,5 @@ public class FacebookStockObserver implements Observer {
 		return "Observer [stock=" + stock + ", price Changed=" + count
 				+ " times]";
 	}
+
 }

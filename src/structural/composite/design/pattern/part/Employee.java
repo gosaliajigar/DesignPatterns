@@ -27,11 +27,15 @@ public class Employee {
 	}
 
 	public void addSubordinate(Employee employee) {
-		subordinates.add(employee);
+		if (!subordinates.contains(employee)) {
+			subordinates.add(employee);
+		}
 	}
 
 	public void removeSubordinate(Employee employee) {
-		subordinates.remove(employee);
+		if (subordinates.contains(employee)) {
+			subordinates.remove(employee);
+		}
 	}
 
 	public List<Employee> getSubordinates() {

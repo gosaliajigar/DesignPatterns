@@ -1,5 +1,6 @@
 package creational.singleton.design.pattern.serialize;
 
+import java.io.ObjectStreamException;
 import java.io.Serializable;
 
 /**
@@ -44,7 +45,7 @@ public class SingletonSerializePattern implements Serializable {
 	 * 
 	 * @return
 	 */
-	protected Object readResolve() {
+	protected Object readResolve() throws ObjectStreamException {
 	    return getInstance();
 	}
 }

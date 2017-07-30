@@ -1,6 +1,6 @@
 package structural.decorator.design.pattern.processor;
 
-import structural.decorator.design.pattern.decorator.Decorator;
+import structural.decorator.design.pattern.decorator.TokenNumberDecorator;
 import structural.decorator.design.pattern.existing.TokenNumber;
 
 
@@ -20,6 +20,6 @@ public class MainProcessor {
 	 */
 	public static void main(String[] args) {
 		// Attaching additional wrapper
-		new Decorator(new TokenNumber());
+		new TokenNumberDecorator(new TokenNumber());
 	}
 }

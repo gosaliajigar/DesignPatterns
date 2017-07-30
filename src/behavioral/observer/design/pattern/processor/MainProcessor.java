@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import behavioral.observer.design.pattern.observer.FacebookStockObserver;
-import behavioral.observer.design.pattern.observer.GoogleStockObserver;
-import behavioral.observer.design.pattern.observer.LinkedInStockObserver;
 import behavioral.observer.design.pattern.observer.Observer;
+import behavioral.observer.design.pattern.observers.FacebookStockObserver;
+import behavioral.observer.design.pattern.observers.GoogleStockObserver;
+import behavioral.observer.design.pattern.observers.LinkedInStockObserver;
 import behavioral.observer.design.pattern.subject.Stock;
 
 /**

@@ -1,5 +1,6 @@
-package behavioral.observer.design.pattern.observer;
+package behavioral.observer.design.pattern.observers;
 
+import behavioral.observer.design.pattern.observer.Observer;
 import behavioral.observer.design.pattern.subject.Stock;
 
 /**

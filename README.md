@@ -4,13 +4,13 @@ DesignPatterns
 Sample Code for Design Patterns
 
 ## A. Behavioral Design Patterns ##
-Provides solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
+Provides solution for the better interaction between objects and how to provide loose coupling and flexibility to extend easily.
   1. Chain of Responsibilities
   2. Observer
   3. Visitor
 
 ## B. Creational Design Patterns ##
-Provides solution to instantiate a object in the best possible way for specific situations.
+Provides solution to instantiate an object in the best possible way for specific situations.
   1. Abstract Factory
   2. Builder
   3. Factory
