@@ -14,6 +14,9 @@ package creational.singleton.design.pattern.billpugh;
  * return the same correctly initialized INSTANCE without incurring any
  * additional synchronization overhead.
  * 
+ * Bill Pugh Singleton is the best approach so far, but it can be easily destroyed 
+ * with the use of Java reflection.
+ * 
  * @author "Jigar Gosalia"
  * 
  */

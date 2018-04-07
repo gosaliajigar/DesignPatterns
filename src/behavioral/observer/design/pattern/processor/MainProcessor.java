@@ -84,7 +84,7 @@ public class MainProcessor {
 
 	private static float getNewStockPrice(float price) {
 		float spike = randomSpike.nextInt(2);
-		float multiplier = (((randomIncDec.nextInt(100)%2) == 0) ? (1 + (spike/100)) : (1 - (spike/100))) ;
+		float multiplier = (((randomIncDec.nextInt(100)%2) == 0) ? (1 + (spike/100)) : (1 - (spike/100)));
 		return (price * multiplier);
 	}
 }
