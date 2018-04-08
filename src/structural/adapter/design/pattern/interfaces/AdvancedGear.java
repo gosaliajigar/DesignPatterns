@@ -7,8 +7,6 @@ package structural.adapter.design.pattern.interfaces;
  *
  */
 public interface AdvancedGear extends Gear {
-	/**
-	 * 
-	 */
+
 	public void automaticGear();
 }

@@ -300,19 +300,18 @@ Real Life Example : Every Java application has a single instance of class Runtim
  - Breaking encapsulation. Visitor's approach assumes that the ConcreteElement interface is powerful enough to let visitors do their job. As a result, the pattern often forces you to provide public operations that access an element's internal state, which may compromise its encapsulation.
 
 Real Life Example : 
- 
+
 ## Differences ##
 -----------------
- 
+
 ### Adapter vs Proxy Design Pattern ###
  - Adapter design pattern provides a different interface from the real object and enables the client to use it to interact with the real object.
- - But, proxy design pattern provides the same interface as in the real object.
- 
+ - But, Proxy design pattern provides the same interface as in the real object.
 
 ### Decorator vs Proxy Design Pattern ###
- - Decorator design pattern adds behaviour at runtime to the real object.
- - But, Proxy does not change the behaviour instead it controls the behaviour.
+ - Decorator design pattern adds behavior at runtime to the real object.
+ - But, Proxy does not change the behavior instead it controls the behavior.
 
 ## Source ##
 ------------
- http://java.boot.by/scea5-guide/ch07s03.html
+http://java.boot.by/scea5-guide/ch07s03.html

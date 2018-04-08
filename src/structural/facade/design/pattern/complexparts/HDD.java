@@ -8,10 +8,8 @@ package structural.facade.design.pattern.complexparts;
  */
 public class HDD {
 
-	/**
-	 * 
-	 */
 	public void loadData() {
 		System.out.println("HDD : Loading Data .....");
 	}
+
 }

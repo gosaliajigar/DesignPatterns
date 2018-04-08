@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import structural.proxy.design.pattern.implementations.Account;
+import structural.proxy.design.pattern.interfaces.Activity;
 import structural.proxy.design.pattern.proxy.ProxyAccount;
 
 /**
@@ -33,7 +34,7 @@ public class MainProcessor {
 
 	public static void main(String[] args) {
 
-		ProxyAccount proxy = new ProxyAccount(1234);
+		Activity proxy = new ProxyAccount(1234);
 
 		System.out.println(" --- Actual Account --- ");
 		accounts.get(1234).printHistory();

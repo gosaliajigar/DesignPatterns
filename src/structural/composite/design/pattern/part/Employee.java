@@ -23,7 +23,7 @@ public class Employee {
 		this.name = name;
 		this.department = department;
 		this.salary = salary;
-		subordinates = new ArrayList<Employee>();
+		this.subordinates = new ArrayList<Employee>();
 	}
 
 	public void addSubordinate(Employee employee) {

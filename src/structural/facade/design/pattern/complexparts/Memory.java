@@ -8,10 +8,8 @@ package structural.facade.design.pattern.complexparts;
  */
 public class Memory {
 
-	/**
-	 * 
-	 */
 	public void loadMemory() {
 		System.out.println("Memory : Load RAM ....");
 	}
+
 }

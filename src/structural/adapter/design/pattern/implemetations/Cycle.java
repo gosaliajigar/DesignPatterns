@@ -14,6 +14,6 @@ public class Cycle implements Gear {
 	 * @see structural.adapter.design.pattern.interfaces.Gear#manualGear()
 	 */
 	public void manualGear() {
-		System.out.println("Use Manual Gears");
+		System.out.println("Use Manual Gear");
 	}
 }

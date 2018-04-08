@@ -7,8 +7,6 @@ package structural.adapter.design.pattern.interfaces;
  *
  */
 public interface Gear {
-	/**
-	 * 
-	 */
+
 	public void manualGear();
 }

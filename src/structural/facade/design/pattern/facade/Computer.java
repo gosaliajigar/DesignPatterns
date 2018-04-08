@@ -10,19 +10,10 @@ import structural.facade.design.pattern.complexparts.*;
  */
 public class Computer {
 
-	/**
-	 * 
-	 */
 	private CPU cpu = new CPU();
 
-	/**
-	 * 
-	 */
 	private Memory memory = new Memory();
 
-	/**
-	 * 
-	 */
 	private HDD hdd = new HDD();
 
 	/**
@@ -35,4 +26,5 @@ public class Computer {
 		memory.loadMemory();
 		hdd.loadData();
 	}
+
 }

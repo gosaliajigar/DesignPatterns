@@ -8,10 +8,7 @@ import java.util.Random;
  */
 public class TokenNumber {
 
-	/**
-	 * 
-	 */
 	public void print() {
-		System.out.println(new Random(999999L).nextInt());
+		System.out.println(new Random(999999999).nextInt());
 	}
 }

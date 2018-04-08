@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import structural.proxy.design.pattern.interfaces.Activity;
+import structural.proxy.design.pattern.processor.MainProcessor;
 
 /**
  * 
@@ -35,7 +36,15 @@ public class Account implements Activity {
 		this.permissions = new LinkedList<String>();
 		this.permissions.addAll(permissions);
 		this.history = new LinkedList<String>();
-		this.history.addAll(history);	}
+		this.history.addAll(history);
+	}
+
+	public Account(int accountNumber) {
+		// In real life, account object will be retrieved given account number.
+		this(MainProcessor.accounts.get(accountNumber).getAccountNumber(), 
+				MainProcessor.accounts.get(accountNumber).getPermissions(), 
+				MainProcessor.accounts.get(accountNumber).getHistory());
+	}
 
 	/* (non-Javadoc)
 	 * @see structural.proxy.design.pattern.interfaces.Activity#printHistory()

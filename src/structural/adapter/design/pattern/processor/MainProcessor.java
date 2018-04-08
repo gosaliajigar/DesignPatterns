@@ -6,7 +6,6 @@ import structural.adapter.design.pattern.implemetations.Bike;
 import structural.adapter.design.pattern.interfaces.Gear;
 import structural.adapter.design.pattern.interfaces.AdvancedGear;
 
-
 /**
  * Adapter Design Pattern : Structural Design Pattern<br>
  * <br>

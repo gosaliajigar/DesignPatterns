@@ -10,9 +10,6 @@ public class TokenNumberDecorator {
 
 	private TokenNumber token;
 
-	/**
-	 * 
-	 */
 	public TokenNumberDecorator(final TokenNumber token) {
 		this.token = token;
 		// add a description to the number

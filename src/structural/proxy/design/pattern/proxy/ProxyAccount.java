@@ -4,7 +4,6 @@ import java.util.List;
 
 import structural.proxy.design.pattern.implementations.Account;
 import structural.proxy.design.pattern.interfaces.Activity;
-import structural.proxy.design.pattern.processor.MainProcessor;
 
 /**
  * ProxyAccount to be shared with client so that client have limited access to
@@ -18,8 +17,7 @@ public class ProxyAccount implements Activity {
 	private Account account;
 
 	public ProxyAccount(int accountNumber) {
-		// In real life, account object will be retrieved given account number.
-		this.account = MainProcessor.accounts.get(accountNumber);
+		account = new Account(accountNumber);
 	}
 
 	/* (non-Javadoc)
