@@ -6,14 +6,8 @@ package creational.singleton.design.pattern.threadsafe;
  */
 public class SingletonThreadSafeDoubleCheckedLockingPattern {
 
-	/**
-	 * 
-	 */
 	private static volatile SingletonThreadSafeDoubleCheckedLockingPattern instance;
 
-	/**
-	 * 
-	 */
 	private SingletonThreadSafeDoubleCheckedLockingPattern() {
 		System.out.println("Instantiated SingletonThreadSafeDoubleCheckedLockingPattern ... ");
 	}

@@ -6,14 +6,8 @@ package creational.singleton.design.pattern.threadsafe;
  */
 public class SingletonThreadSafeMethodPattern {
 
-	/**
-	 * 
-	 */
 	private static volatile SingletonThreadSafeMethodPattern instance;
 
-	/**
-	 * 
-	 */
 	private SingletonThreadSafeMethodPattern() {
 		System.out.println("Instantiated SingletonThreadSafeMethodPattern ... ");
 	}

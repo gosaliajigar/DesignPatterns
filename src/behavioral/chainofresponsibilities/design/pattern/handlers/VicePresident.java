@@ -7,9 +7,7 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  * 
  */
 public class VicePresident extends PurchasePower {
-	/**
-	 * 
-	 */
+
 	private final double ALLOWABLE = 40 * base;
 
 	/**

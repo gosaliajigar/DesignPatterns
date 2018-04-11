@@ -6,14 +6,8 @@ package creational.singleton.design.pattern.lazy;
  */
 public class SingletonLazyPattern {
 
-	/**
-	 * 
-	 */
 	private static SingletonLazyPattern instance;
 
-	/**
-	 * 
-	 */
 	private SingletonLazyPattern() {
 		System.out.println("Instantiated SingletonLazyPattern ... ");
 	}

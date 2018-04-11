@@ -8,19 +8,10 @@ package creational.builder.design.pattern.product;
  */
 public class Pizza {
 
-	/**
-	 * 
-	 */
 	private String dough;
 
-	/**
-	 * 
-	 */
 	private String sauce;
 
-	/**
-	 * 
-	 */
 	private String toppings;
 
 	/**

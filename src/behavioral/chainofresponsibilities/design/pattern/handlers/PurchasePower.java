@@ -10,14 +10,8 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  */
 public abstract class PurchasePower {
 
-	/**
-     *
-     */
 	protected final double base = 500;
 
-	/**
-     *
-     */
 	protected PurchasePower successor;
 
 	/**

@@ -6,14 +6,8 @@ package creational.singleton.design.pattern.early;
  */
 public class SingletonEarlyPattern {
 
-	/**
-	 * 
-	 */
-	private static SingletonEarlyPattern instance = new SingletonEarlyPattern();
+	private static final SingletonEarlyPattern instance = new SingletonEarlyPattern();
 
-	/**
-	 * 
-	 */
 	private SingletonEarlyPattern() {
 		System.out.println("Instantiated SingletonEarlyPattern ... ");
 	}

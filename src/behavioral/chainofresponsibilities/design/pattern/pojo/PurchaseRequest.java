@@ -9,17 +9,10 @@ package behavioral.chainofresponsibilities.design.pattern.pojo;
  */
 public class PurchaseRequest {
 
-	/**
-     *
-     */
 	private int number;
-	/**
-     *
-     */
+
 	private double amount;
-	/**
-     *
-     */
+
 	private String purpose;
 
 	/**

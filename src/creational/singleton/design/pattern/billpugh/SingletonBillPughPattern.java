@@ -12,8 +12,8 @@ package creational.singleton.design.pattern.billpugh;
  * initialization phase writes the static variable INSTANCE in a serial
  * operation, all subsequent concurrent invocations of the getInstance will
  * return the same correctly initialized INSTANCE without incurring any
- * additional synchronization overhead.
- * 
+ * additional synchronization overhead.<br>
+ * <br>
  * Bill Pugh Singleton is the best approach so far, but it can be easily destroyed 
  * with the use of Java reflection.
  * 
@@ -22,9 +22,6 @@ package creational.singleton.design.pattern.billpugh;
  */
 public class SingletonBillPughPattern {
 
-	/**
-	 * 
-	 */
 	private SingletonBillPughPattern() {
 		System.out.println("Instantiated SingletonBillPughPattern ... ");
 	}

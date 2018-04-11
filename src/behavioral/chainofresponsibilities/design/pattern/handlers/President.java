@@ -7,16 +7,10 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  * 
  */
 public class President extends PurchasePower {
-	/**
-	 * 
-	 */
+
 	private final double ALLOWABLE = 60 * base;
 
-	/**
-	 * 
-	 */
-	public President() {
-	}
+	public President() {}
 
 	/*
 	 * (non-Javadoc)

@@ -9,7 +9,7 @@ public class SingletonStaticBlockPattern {
 	/**
 	 * 
 	 */
-	private static SingletonStaticBlockPattern instance;
+	private static final SingletonStaticBlockPattern instance;
 
 	/**
 	 * 

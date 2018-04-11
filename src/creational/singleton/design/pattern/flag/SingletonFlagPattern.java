@@ -6,19 +6,10 @@ package creational.singleton.design.pattern.flag;
  */
 public class SingletonFlagPattern {
 
-	/**
-	 * 
-	 */
 	private static boolean hasInstance = false;
 
-	/**
-	 * 
-	 */
 	private static SingletonFlagPattern instance;
 
-	/**
-	 * 
-	 */
 	private SingletonFlagPattern() {
 		System.out.println("Instantiated SingletonFlagPattern ... ");
 	}

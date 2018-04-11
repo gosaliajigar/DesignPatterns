@@ -9,9 +9,7 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  *
  */
 public class Manager extends PurchasePower {
-	/**
-     *
-     */
+
 	private final double ALLOWABLE = 10 * base;
 
 	/**

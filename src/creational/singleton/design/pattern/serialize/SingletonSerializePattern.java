@@ -9,14 +9,8 @@ import java.io.Serializable;
  */
 public class SingletonSerializePattern implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 
-	 */
 	private SingletonSerializePattern() {
 		System.out.println("Instantiated SingletonSerializePattern ... ");
 	}
@@ -39,10 +33,12 @@ public class SingletonSerializePattern implements Serializable {
 
 	/**
 	 * readResolve ensures that object read from file during de-serialization
-	 * returns the same instance and not a new instance of singleton object.
-	 * 
-	 * readResolve is called after readObject returns.
-	 * 
+	 * returns the same instance and not a new instance of singleton object.<br>
+	 * <br>
+	 * readResolve is called after readObject returns.<br>
+	 * <br>
+	 * https://docs.oracle.com/javase/8/docs/platform/serialization/spec/input.html
+	 * <br><br>
 	 * @return
 	 */
 	protected Object readResolve() throws ObjectStreamException {
