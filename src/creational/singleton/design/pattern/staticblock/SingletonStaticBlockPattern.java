@@ -6,14 +6,8 @@ package creational.singleton.design.pattern.staticblock;
  */
 public class SingletonStaticBlockPattern {
 
-	/**
-	 * 
-	 */
 	private static final SingletonStaticBlockPattern instance;
 
-	/**
-	 * 
-	 */
 	private SingletonStaticBlockPattern() {
 		System.out.println("Instantiated SingletonStaticBlockPattern ... ");
 	}
