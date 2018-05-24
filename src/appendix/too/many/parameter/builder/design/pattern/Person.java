@@ -35,41 +35,23 @@ public class Person {
 		this.isMale = isMale;
 	}
 
-	public String getSalutation() {
-		return salutation;
-	}
+	public String getSalutation() { return salutation; }
 
-	public String getFirst() {
-		return first;
-	}
+	public String getFirst() { return first; }
 
-	public String getMiddle() {
-		return middle;
-	}
+	public String getMiddle() { return middle; }
 
-	public String getLast() {
-		return last;
-	}
+	public String getLast() { return last; }
 
-	public String getStreetName() {
-		return streetName;
-	}
+	public String getStreetName() {	return streetName; }
 
-	public String getCity() {
-		return city;
-	}
+	public String getCity() { return city; }
 
-	public String getState() {
-		return state;
-	}
+	public String getState() { return state; }
 
-	public String getZipCode() {
-		return zipCode;
-	}
+	public String getZipCode() { return zipCode; }
 
-	public boolean isMale() {
-		return isMale;
-	}
+	public boolean isMale() { return isMale; }
 
 	public static class PersonBuilder {
 		private String iSalutation;
