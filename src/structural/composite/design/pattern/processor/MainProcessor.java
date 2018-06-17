@@ -47,18 +47,21 @@ public class MainProcessor {
 		leadDeveloper.addSubordinate(tester);
 
 		// Print Employee Tree
-		getEmployeeTree(cto, "");
+		System.out.println("Employee # : " + getEmployeeTree(cto, ""));
 	}
 
 	/**
 	 * @param head
 	 * @param tabs
 	 */
-	private static void getEmployeeTree(Employee head, String tabs) {
+	private static int getEmployeeTree(Employee head, String tabs) {
+		int count = 0;
 		tabs += "-";
 		for (Employee employee : head.getSubordinates()) {
 			System.out.println(tabs + employee);
-			getEmployeeTree(employee, tabs);
+			count++;
+			count += getEmployeeTree(employee, tabs);
 		}
+		return count;
 	}
 }
