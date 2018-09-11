@@ -20,10 +20,6 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  *
  */
 public class MainProcessor {
-
-	/**
-	 * @param args
-	 */
 	public static void main(final String[] args) {
 		President president = new President();
 		VicePresident vicePresident = new VicePresident(president);

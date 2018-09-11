@@ -9,20 +9,11 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  *
  */
 public abstract class PurchasePower {
-
 	protected final double base = 500;
 
 	protected PurchasePower successor;
 
-	/**
-	 * @param successor
-	 */
-	public void setSuccessor(final PurchasePower successor) {
-		this.successor = successor;
-	}
+	public void setSuccessor(final PurchasePower successor) { this.successor = successor; }
 
-	/**
-	 * @param request
-	 */
 	public abstract void processRequest(PurchaseRequest request);
 }

@@ -9,24 +9,12 @@ import behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest;
  *
  */
 public class Director extends PurchasePower {
-
 	private final double ALLOWABLE = 20 * base;
 
-	/**
-	 * @param successor
-	 */
 	public Director(final PurchasePower successor) {
 		this.setSuccessor(successor);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * behavioral.chainofresponsibilities.design.pattern.handlers.PurchasePower
-	 * #processRequest
-	 * (behavioral.chainofresponsibilities.design.pattern.pojo.PurchaseRequest)
-	 */
 	@Override
 	public void processRequest(final PurchaseRequest request) {
 		if (request.getAmount() < ALLOWABLE)
